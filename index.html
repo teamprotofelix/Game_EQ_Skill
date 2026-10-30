@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#09162c">
+<meta name="description" content="AI 품질진단 시스템의 원리를 체험하는 무료 오프라인 HTML5 아케이드 게임. KIPRIS Plus, 스킬, 판본 복원, OA/RD/RC, 평가관 피드백을 배웁니다.">
+<title>SKILL CORE · 마리의 AI 품질진단 아케이드</title>
+<link rel="icon" href="assets/favicon.webp" type="image/webp">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<header class="masthead">
+ <a class="brand" href="./index.html" aria-label="게임 첫 화면"><span class="mark">M<span class="spark">✦</span></span><span><strong>SKILL<span class="accent">CORE</span></strong><small>AI 심사품질 진단 아케이드</small></span></a>
+ <div class="header-actions"><span class="sim-badge">● 교육용</span><button class="mini" id="mapBtn" type="button">◈ 시스템 지도</button><button class="mini" id="guideBtn" type="button">? 학습 도감</button><button class="mini icon-mini" id="soundBtn" type="button" aria-label="음향 켜기 또는 끄기">♫</button></div>
+</header>
+<div class="layout">
+<main class="board" aria-label="AI 품질진단 게임">
+ <div class="hud">
+  <div class="hud-tile"><span class="over">시스템 무결성</span><div class="bar"><div id="hpFill" class="bar-fill"></div></div><b id="hpText">100%</b></div>
+  <div class="hud-tile"><span class="over">스코어</span><b class="score" id="scoreText">000000</b></div>
+  <div class="hud-tile"><span class="over">콤보</span><b id="comboText">×0</b></div>
+  <div class="hud-tile"><span class="over">데이터 스트림</span><b id="progressText">0 / 33</b></div>
+ </div>
+ <div id="arena" class="arena">
+  <canvas id="world" width="1100" height="650" aria-hidden="true"></canvas>
+  <div class="arena-shade"></div>
+  <div class="mission">
+   <div class="mission-top"><span class="chapter" id="chapter">START</span><span class="q-ref" id="ruleRef">기본 조작 학습</span></div>
+   <h1 id="question">SKILL CORE 작전 준비</h1>
+   <p id="missionHint">스킬의 원리를 이해하며 데이터 게이트를 통과하세요.</p>
+   <div class="time-track"><div id="timerBar"></div></div>
+  </div>
+  <div id="choiceCards" class="choices" role="group" aria-label="선택할 데이터 게이트">
+    <button type="button" class="choice" data-index="0"><span class="c-index">01</span><span class="c-art" aria-hidden="true"></span><span class="c-text">START</span><span class="select-foot">선택 [1]</span></button>
+    <button type="button" class="choice" data-index="1"><span class="c-index">02</span><span class="c-art" aria-hidden="true"></span><span class="c-text">START</span><span class="select-foot">선택 [2]</span></button>
+    <button type="button" class="choice" data-index="2"><span class="c-index">03</span><span class="c-art" aria-hidden="true"></span><span class="c-text">START</span><span class="select-foot">선택 [3]</span></button>
+  </div>
+  <div class="bottomline"><span id="controlHint">← → 이동 · SPACE 선택 · 1/2/3 즉시 선택</span><span id="countdown">20.0s</span></div>
+  <img class="mobile-hero" src="assets/hero-idle.webp" alt="" aria-hidden="true"><div id="flash" class="flash"></div>
+ </div>
+ <div class="lower"><div class="status"><span class="dot"></span><span id="statusText">진단 코어 대기 중 · 실제 API에는 연결되지 않습니다.</span></div><div class="control-btns"><button id="leftBtn" class="pad" aria-label="왼쪽 게이트" type="button">◀</button><button id="scanBtn" class="pad scan" type="button">스캔 <span>⏎</span></button><button id="rightBtn" class="pad" aria-label="오른쪽 게이트" type="button">▶</button></div></div>
+</main>
+<aside class="sidebar" aria-label="게임 진행 및 학습 정보">
+ <section class="side-panel art-panel"><div class="scene-image-wrap"><img id="sceneImage" src="assets/chapter-01.webp" alt="디지털 하늘 정원 게임 배경"><div class="scene-label" id="sceneName">01 / 07 · 스킬 코어</div></div><p>임무 지역의 배경·캐릭터·오브젝트는 WebP 일러스트와 스프라이트로 렌더링됩니다.</p></section>
+ <section class="side-panel process"><div class="eyebrow">LIVE PROCESS MAP</div><h2>AI 진단 시스템 구조</h2><p class="muted">각 코어가 이어져야 진단이 완성됩니다.</p><ol id="stageMap" class="stage-map"></ol></section>
+ <section class="side-panel concept"><div class="companion-sprite" aria-hidden="true"></div><div class="eyebrow">WHY THIS MATTERS</div><h2 id="conceptTitle">AI 혼자 판단하지 않습니다</h2><p id="conceptText">스킬이 절차를 지시하고, KIPRIS가 실제 근거를 공급하고, 평가관이 결과를 검증합니다.</p><div class="mini-flow">사용자 <span>→</span> 스킬 <span>→</span> KIPRIS <span>→</span> AI 진단 <span>→</span> 평가관</div></section>
+ <section class="side-panel log"><div class="eyebrow">AUDIT LOG</div><h2>진단 실행 로그</h2><ul id="eventLog"><li>시뮬레이션 대기 중</li></ul></section>
+</aside>
+</div>
+<footer class="foot">AI 품질진단 시스템의 실제 지침 구조를 학습하기 위한 <strong>가상 게임</strong>입니다. 실시간 KIPRIS 조회·특허 법률판단·원문 업로드·피드백 전송을 실행하지 않습니다. <span>© 2026 SKILL CORE · Illustrated arcade edition</span></footer>
+</div>
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+ <div class="modal">
+  <div class="modal-art"><img class="modal-character" src="assets/hero-idle.webp" alt="마리 게임 캐릭터"><div class="emblem">✦</div><div class="neon-ring"></div><img class="modal-bot" src="assets/bot-idle.webp" alt="AI 보조 로봇"></div>
+  <div class="modal-body"><div class="eyebrow" id="modalEyebrow">WELCOME / QUALITY DEFENSE</div><h2 id="modalTitle">마리의 스킬 코어</h2><div class="modal-copy" id="modalCopy"></div><div class="modal-actions"><button type="button" id="modalAction" class="cta">작전 시작 <span>➜</span></button><button type="button" id="modalSecondary" class="secondary">시스템 구조 보기</button></div></div>
+ </div>
+</div>
+<div id="liveRegion" class="sr-only" aria-live="polite"></div>
+<script src="game-data.js"></script>
+<script src="game.js"></script>
+</body></html>

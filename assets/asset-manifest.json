@@ -1,0 +1,138 @@
+{
+  "name": "SKILL CORE - AI 심사품질 진단 아케이드 (Illustrated Edition)",
+  "edition": "2026-10-30",
+  "format": "GitHub Pages static HTML/JS + all WebP art",
+  "art_count": 26,
+  "assets": [
+    {
+      "file": "bg-intro.webp",
+      "bytes": 407224,
+      "sha256": "683f1e55f750bb52c87eb8e0792f1d4306e6931ee5cda5439206da1a92122ec3"
+    },
+    {
+      "file": "bg-stage-01.webp",
+      "bytes": 407224,
+      "sha256": "683f1e55f750bb52c87eb8e0792f1d4306e6931ee5cda5439206da1a92122ec3"
+    },
+    {
+      "file": "bg-stage-02.webp",
+      "bytes": 397070,
+      "sha256": "ce4be8ef07bc8680a6888794757493f38f2a203f610f09323af4722b378258b6"
+    },
+    {
+      "file": "bg-stage-03.webp",
+      "bytes": 433588,
+      "sha256": "f89c6cfe0475059ff005cf1c3981dd915ad218be5288ae1dae0b328f67a6664f"
+    },
+    {
+      "file": "bg-stage-04.webp",
+      "bytes": 437406,
+      "sha256": "81726c1fb61c119a7da68aea2fc3d7ef38b0b17cff2e557ca6c0e15283614af9"
+    },
+    {
+      "file": "bg-stage-05.webp",
+      "bytes": 423460,
+      "sha256": "dd93377f7b96ae5f4ba486e84d4e5410826fb990c2e4d71054d66fd6f4d801a3"
+    },
+    {
+      "file": "bg-stage-06.webp",
+      "bytes": 415178,
+      "sha256": "48174e76909a9998e0641e2b806688885c9b657d86fb1b509392445e1dc6bda9"
+    },
+    {
+      "file": "bg-stage-07.webp",
+      "bytes": 455216,
+      "sha256": "700492af365c7de4461c7f79578e640069a9e60cf6e89adca5c43e2e1edf5e0a"
+    },
+    {
+      "file": "boss-atlas.webp",
+      "bytes": 360312,
+      "sha256": "f464b6325c4cc5af19b0e68ea1cfc6d468fa110c657dc379789df9b84aed80fd"
+    },
+    {
+      "file": "boss-portrait.webp",
+      "bytes": 28646,
+      "sha256": "d14c26356c0dff50a6bd964a14fa833d88422be1d46ebe3b3fa1230d079776d7"
+    },
+    {
+      "file": "bot-idle.webp",
+      "bytes": 12628,
+      "sha256": "2fccbae29f16c39c8af8a1633919d1107794f0ac8963f71b576eabd12b927382"
+    },
+    {
+      "file": "chapter-01.webp",
+      "bytes": 73962,
+      "sha256": "c747963cf0b535aac9a1fe41fded48b7d7f936f28f8dd7a688deedf1ff44a33a"
+    },
+    {
+      "file": "chapter-02.webp",
+      "bytes": 71380,
+      "sha256": "a442b1fadb2f46c6612f8e7c24ae53a799753f36e0d8cd6f1985a9ba23f3610e"
+    },
+    {
+      "file": "chapter-03.webp",
+      "bytes": 79314,
+      "sha256": "80dec1ce937af459bff2edc8f6cb0fbaabfe22dfcf00dc245d775ee1017b9788"
+    },
+    {
+      "file": "chapter-04.webp",
+      "bytes": 78800,
+      "sha256": "da1bebe7034cf3a3cb4269706d0378721132d3488be94f5e61e9811f5fd6d759"
+    },
+    {
+      "file": "chapter-05.webp",
+      "bytes": 76028,
+      "sha256": "39116b9272b6d9bb7df0907f282ef3fe40cb670d88518ec41a07d6fd628b9aa5"
+    },
+    {
+      "file": "chapter-06.webp",
+      "bytes": 72706,
+      "sha256": "fbc88bace44506a99fb340e4b5a563f17692237a59fb8b8f9c3fb3bda89f9144"
+    },
+    {
+      "file": "chapter-07.webp",
+      "bytes": 77748,
+      "sha256": "97108992be87876e03ecab050bcb510a447a5032566a2b09325e50f64c764c71"
+    },
+    {
+      "file": "companion-atlas.webp",
+      "bytes": 95700,
+      "sha256": "145007f3d432a49d9b863e38aab59752eca17d2eaf8c6648704ceda236026d22"
+    },
+    {
+      "file": "enemy-atlas.webp",
+      "bytes": 286992,
+      "sha256": "2f7cc1be4e920adc92e134d08e8327eb1d358fcef147924b8d648dc8c8f83760"
+    },
+    {
+      "file": "favicon.webp",
+      "bytes": 4314,
+      "sha256": "0ea105abc1264d21ab1ecfb9367d1182ce6a034aadd59ff2540f33f77643ee1f"
+    },
+    {
+      "file": "floor-tile.webp",
+      "bytes": 19852,
+      "sha256": "a08712cee85314f3f62937ec9c846f92d063171c5c2805086aa94cfaf763da03"
+    },
+    {
+      "file": "hero-atlas.webp",
+      "bytes": 219350,
+      "sha256": "90e37c0bd79f7581d8aeab0273b266e62d6af2a487db5a29d4a39b09c85605f8"
+    },
+    {
+      "file": "hero-idle.webp",
+      "bytes": 22880,
+      "sha256": "fed40d28f0b1ba0345fad9a7f4d6be21dbb4c72be9ae2aeb07705f0cb8b6cebe"
+    },
+    {
+      "file": "item-atlas.webp",
+      "bytes": 68678,
+      "sha256": "1cd9f730b653b652179382ef6aee30314708406de029a1048182cd044ab86092"
+    },
+    {
+      "file": "portal-atlas.webp",
+      "bytes": 208842,
+      "sha256": "e5214bb487505d8dcfa2088391a568fc9a4d7424800a51f735e7eac4f627fa00"
+    }
+  ]
+}
